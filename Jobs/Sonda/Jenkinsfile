@@ -4,7 +4,7 @@ pipeline {
     environment {
         ANDROID_HOME = "C:/Users/SQA/AppData/Local/Android/Sdk"
         JAVA_HOME = "C:/Program Files/Java/jdk-23"
-        NVM_HOME = "C:/Users/Administrator/AppData/Roaming/nvm"
+        NVM_HOME = "C:/Users/SQA/AppData/Roaming/nvm"
         PATH = "${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}"
     }
 
