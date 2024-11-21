@@ -17,12 +17,7 @@ pipeline {
 
         stage('Select node version') {
             steps {
-                 bat '''
-                    echo %NVM_HOME%
-                    nvm install 18
-                    nvm use 18
-                    node -v
-                '''
+                 bat 'runas /user:Administrator "cmd /c \"nvm use 18\""'
             }
         }
 
