@@ -16,13 +16,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm i'
+                bat 'npm i'
             }
         }
 
         stage('Build APK') {
             steps {
-                sh 'npm run build:android'
+                bat 'npm run build:android'
             }
         }
 
