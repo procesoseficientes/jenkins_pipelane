@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/procesoseficientes/sonda-2'
+                git credentialsId: 'Sonda2-Credentials', branch: 'master', url: 'https://github.com/procesoseficientes/sonda-2.git'
             }
         }
 
