@@ -16,13 +16,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh './gradlew dependencies'
+                npm 'i'
             }
         }
 
         stage('Build APK') {
             steps {
-                sh './gradlew assembleRelease'
+                npm 'run build:android'
             }
         }
 
